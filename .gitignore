@@ -1,0 +1,29 @@
+# === NODE.JS ===
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# === NEXT.JS ===
+.next/
+out/
+.next/
+.env*.local
+
+# === BUILD ===
+build/
+dist/
+
+# === LOGS ===
+*.log
+
+# === CACHE ===
+.cache/
+.nuxt/
+.vscode/
+.idea/
+
+# === TEMP ===
+tmp/
+temp/
