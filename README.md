@@ -61,7 +61,6 @@ Latency Topology is a powerful dashboard that helps network engineers and trader
 
 ## Project Structure
 
-\`\`\`  
 latency-topology/  
 ├─ app/  
 │  ├─ layout.tsx  
@@ -100,169 +99,135 @@ latency-topology/
 ├─ tsconfig.json  
 └─ next.config.mjs  
 
-\`\`\`
 
 ## Installation & Setup
 
 ### Prerequisites
-- Node.js 18+ or higher
-- npm or yarn package manager
+- `Node.js 18+ or higher`
+- `npm or yarn package manager`
 
 ### Steps
 
-1. **Clone the repository** (or extract the project files)
-   \`\`\`bash
-   cd latency-topology
-   \`\`\`
+1. **Clone the repository** (or extract the project files)  
+   `cd latency-topology`
+   
 
-2. **Install dependencies**
-   \`\`\`bash
-   npm install
-   \`\`\`
+2. **Install dependencies**  
+   `npm install`
 
-3. **Run development server**
-   \`\`\`bash
-   npm run dev
-   \`\`\`
+3. **Run development server**  
+   `npm run dev`
 
-4. **Open in browser**
+4. **Open in browser**  
    - Navigate to `http://localhost:3000`
 
-### Build for Production
-\`\`\`bash
-npm run build
-npm start
-\`\`\`
+### Build for Production  
+`npm run build
+npm start`
 
-## Usage Guide
 
-### Dashboard Layout
+## Usage Guide  
+
+### Dashboard Layout  
 - **Left Sidebar**: Contains search, filters, control panel, legend, and performance metrics
 - **Center**: Interactive 3D map visualization of the network topology
 - **Right Panel**: Historical latency charts and detailed region information
 
-### Filtering Data
+### Filtering Data  
 1. Use the **Search Bar** to find specific exchanges
 2. Select an **Exchange** from the dropdown in the Control Panel
 3. Choose a **Provider** to filter by network provider
 4. Adjust the **Latency Range** slider to set custom thresholds
 5. Toggle **Historical Data**, **Real-time Updates**, and **Regional Views** as needed
 
-### Analyzing Performance
+### Analyzing Performance  
 1. Click on **Historical** tab to view latency trends
 2. Select a time range (1h, 24h, 7d, 30d)
 3. View interactive charts showing latency patterns
 4. Click on **Details** tab to see region-specific information
 
-### Understanding the Visualization
+### Understanding the Visualization  
 - **Green**: Low latency (optimal performance)
 - **Yellow/Orange**: Moderate latency (acceptable)
 - **Red**: High latency (needs attention)
 - **Legend**: Displays color coding and metric explanations
 
-## Key Components
+## Key Components  
 
-### MapViewer
+### MapViewer  
 Renders the 3D geographical visualization using Three.js. Displays exchange nodes and connection paths with latency-based coloring.
 
-### ControlPanel
+### ControlPanel  
 Manages all filtering options including exchange selection, provider filtering, and latency range adjustment.
 
-### LatencyChart
+### LatencyChart  
 Interactive chart component displaying historical latency data over selected time periods using Recharts.
 
-### RegionInfo
+### RegionInfo  
 Detailed information panel showing performance metrics and statistics for the selected region or exchange.
 
-### PerformanceDash
+### PerformanceDash  
 Summary dashboard displaying key performance indicators and metrics at a glance.
 
-### SearchBar
+### SearchBar  
 Quick search functionality for locating exchanges by name or identifier.
 
-### Legend
+### Legend  
 Color-coded legend and documentation explaining the visualization and metrics.
 
-## Configuration
+## Configuration  
 
-### Environment Variables
+### Environment Variables  
 No environment variables are required for basic functionality. The application works out of the box with mock data.
 
-### Customization
-- Modify `/app/globals.css` for color scheme and design tokens
-- Update component styles using Tailwind CSS classes
-- Extend mock data sources in individual components
+### Customization  
+- Modify `/app/globals.css` for color scheme and design tokens  
+- Update component styles using Tailwind CSS classes  
+- Extend mock data sources in individual components  
 
-## Performance Optimization
+## Performance Optimization  
 
-- **Server-Side Rendering**: Leverages Next.js App Router for optimal performance
-- **Image Optimization**: Next.js automatic image optimization
-- **Code Splitting**: Automatic route-based code splitting
-- **Caching**: SWR for efficient data fetching and caching
-- **CSS Optimization**: Tailwind CSS purges unused styles
+- **Server-Side Rendering**: Leverages Next.js App Router for optimal performance  
+- **Image Optimization**: Next.js automatic image optimization  
+- **Code Splitting**: Automatic route-based code splitting  
+- **Caching**: SWR for efficient data fetching and caching  
+- **CSS Optimization**: Tailwind CSS purges unused styles  
 
-## Browser Support
+## Browser Support  
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Mobile browsers (iOS Safari, Chrome Mobile)
+- Chrome (latest)  
+- Firefox (latest)  
+- Safari (latest)  
+- Edge (latest)  
+- Mobile browsers (iOS Safari, Chrome Mobile)  
 
-## Development
 
-### Available Scripts
+### Code Quality  
+- TypeScript for type safety  
+- ESLint for code consistency  
+- Tailwind CSS for consistent styling  
 
-\`\`\`bash
-npm run dev      # Start development server
-npm run build    # Build for production
-npm start        # Start production server
-npm run lint     # Run ESLint
-\`\`\`
+## Deployment  
 
-### Code Quality
-- TypeScript for type safety
-- ESLint for code consistency
-- Tailwind CSS for consistent styling
+### Vercel (Recommended)  
+1. Push code to GitHub repository  
+2. Connect repository to Vercel  
+3. Deploy with one click  
 
-## Deployment
 
-### Vercel (Recommended)
-1. Push code to GitHub repository
-2. Connect repository to Vercel
-3. Deploy with one click
+## API Integration  
 
-### Other Platforms
-The application is compatible with any Node.js hosting platform including:
-- Netlify
-- AWS Amplify
-- DigitalOcean App Platform
-- Heroku
+The application currently uses mock data for demonstration. To integrate with real latency data:  
 
-## API Integration
+1. Create API endpoints for latency metrics  
+2. Update data fetching logic in components  
+3. Implement real-time updates using WebSockets or Server-Sent Events  
 
-The application currently uses mock data for demonstration. To integrate with real latency data:
 
-1. Create API endpoints for latency metrics
-2. Update data fetching logic in components
-3. Implement real-time updates using WebSockets or Server-Sent Events
-
-## Troubleshooting
-
-### Map not displaying
-- Ensure Three.js is properly imported
-- Check browser console for WebGL errors
-- Try different browser if issue persists
-
-### Performance issues
-- Clear browser cache
-- Reduce time range in historical view
-- Limit number of visible exchanges
-
-### Styling issues
-- Verify Tailwind CSS is properly configured
-- Check if global styles are loaded
-- Clear Next.js cache with `rm -rf .next`
+### Styling issues  
+- Verify Tailwind CSS is properly configured  
+- Check if global styles are loaded  
+- Clear Next.js cache with `rm -rf .next`  
 
 ## Contributing
 
@@ -273,16 +238,6 @@ To contribute improvements:
 3. Test thoroughly
 4. Submit a pull request
 
-## License
 
-This project is provided as-is for educational and commercial use.
-
-## Support
-
-For issues, questions, or suggestions:
-- Review the documentation above
-- Check component comments for implementation details
-- Examine mock data structure for integration guidance
-
-**Last Updated**: November 2025
-**Built with**: Next.js 16, React 19, Three.js, Tailwind CSS 4
+**Last Updated**: November 2025  
+**Built with**: Next.js 16, React 19, Three.js, Tailwind CSS 4  
