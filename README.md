@@ -61,29 +61,44 @@ Latency Topology is a powerful dashboard that helps network engineers and trader
 
 ## Project Structure
 
-\`\`\`
-latency-topology/
-├── app/
-│   ├── layout.tsx           # Root layout with theme provider
-│   ├── page.tsx             # Main dashboard page
-│   └── globals.css          # Global styles and design tokens
-├── components/
-│   ├── mapviewer.tsx        # 3D map visualization component
-│   ├── controlpanel.tsx     # Filter and control panel
-│   ├── latencychart.tsx     # Historical latency chart
-│   ├── regioninfo.tsx       # Region detail information
-│   ├── performancedash.tsx  # Performance metrics dashboard
-│   ├── legend.tsx           # Color legend and documentation
-│   ├── searchbar.tsx        # Exchange search component
-│   └── theme-provider.tsx   # Theme context provider
-├── hooks/
-│   ├── use-toast.ts         # Toast notification hook
-│   └── use-mobile.ts        # Mobile detection hook
-├── lib/
-│   └── utils.ts             # Utility functions and helpers
-├── package.json             # Project dependencies
-├── tsconfig.json            # TypeScript configuration
-└── next.config.mjs          # Next.js configuration
+\`\`\`latency-topology/
+├─ app/
+│  ├─ layout.tsx
+│  ├─ page.tsx
+│  └─ globals.css
+├─ components/
+│  ├─ MapViewer.tsx
+│  ├─ ControlPanel.tsx
+│  ├─ LatencyChart.tsx
+│  ├─ RegionInfo.tsx
+│  ├─ PerformanceDash.tsx
+│  ├─ Legend.tsx
+│  ├─ SearchBar.tsx
+│  └─ ThemeProvider.tsx
+├─ hooks/
+│  ├─ useMobile.ts
+│  └─ useToast.ts
+├─ lib/
+│  ├─ api.ts
+│  ├─ globe.ts
+│  ├─ connection-utils.ts
+│  ├─ exchanges.ts
+│  ├─ latency-hook.ts
+│  ├─ regions.ts
+│  └─ utils.ts
+├─ public/
+│  ├─ screenshots/
+│  │  ├─ map-view.png
+│  │  ├─ control-panel.png
+│  │  └─ performance-dash.png
+│  └─ favicon.ico
+├─ styles/
+│  └─ globals.css
+├─ .gitignore
+├─ package.json
+├─ tsconfig.json
+└─ next.config.mjs
+
 \`\`\`
 
 ## Installation & Setup
@@ -267,17 +282,6 @@ For issues, questions, or suggestions:
 - Review the documentation above
 - Check component comments for implementation details
 - Examine mock data structure for integration guidance
-
-## Version History
-
-### v0.1.0
-- Initial release
-- Core visualization features
-- Filter and search functionality
-- Historical and real-time data views
-- Performance metrics dashboard
-
----
 
 **Last Updated**: November 2025
 **Built with**: Next.js 16, React 19, Three.js, Tailwind CSS 4
