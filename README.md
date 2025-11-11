@@ -62,42 +62,42 @@ Latency Topology is a powerful dashboard that helps network engineers and trader
 ## Project Structure
 
 \`\`\`latency-topology/
-├─ app/
-│  ├─ layout.tsx
-│  ├─ page.tsx
-│  └─ globals.css
-├─ components/
-│  ├─ MapViewer.tsx
-│  ├─ ControlPanel.tsx
-│  ├─ LatencyChart.tsx
-│  ├─ RegionInfo.tsx
-│  ├─ PerformanceDash.tsx
-│  ├─ Legend.tsx
-│  ├─ SearchBar.tsx
-│  └─ ThemeProvider.tsx
-├─ hooks/
-│  ├─ useMobile.ts
-│  └─ useToast.ts
-├─ lib/
-│  ├─ api.ts
-│  ├─ globe.ts
-│  ├─ connection-utils.ts
-│  ├─ exchanges.ts
-│  ├─ latency-hook.ts
-│  ├─ regions.ts
-│  └─ utils.ts
-├─ public/
-│  ├─ screenshots/
-│  │  ├─ map-view.png
-│  │  ├─ control-panel.png
-│  │  └─ performance-dash.png
-│  └─ favicon.ico
-├─ styles/
-│  └─ globals.css
-├─ .gitignore
-├─ package.json
-├─ tsconfig.json
-└─ next.config.mjs
+-├─ app/
+-│  ├─ layout.tsx
+-│  ├─ page.tsx
+-│  └─ globals.css
+-├─ components/
+-│  ├─ MapViewer.tsx
+-│  ├─ ControlPanel.tsx
+-│  ├─ LatencyChart.tsx
+-│  ├─ RegionInfo.tsx
+-│  ├─ PerformanceDash.tsx
+-│  ├─ Legend.tsx
+-│  ├─ SearchBar.tsx
+-│  └─ ThemeProvider.tsx
+-├─ hooks/
+-│  ├─ useMobile.ts
+-│  └─ useToast.ts
+-├─ lib/
+-│  ├─ api.ts
+-│  ├─ globe.ts
+-│  ├─ connection-utils.ts
+-│  ├─ exchanges.ts
+-│  ├─ latency-hook.ts
+-│  ├─ regions.ts
+-│  └─ utils.ts
+-├─ public/
+-│  ├─ screenshots/
+-│  │  ├─ map-view.png
+-│  │  ├─ control-panel.png
+-│  │  └─ performance-dash.png
+-│  └─ favicon.ico
+-├─ styles/
+-│  └─ globals.css
+-├─ .gitignore
+-├─ package.json
+-├─ tsconfig.json
+-└─ next.config.mjs
 
 \`\`\`
 
