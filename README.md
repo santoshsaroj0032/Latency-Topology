@@ -6,6 +6,14 @@ A modern, interactive web application for visualizing and analyzing exchange lat
 
 Latency Topology is a powerful dashboard that helps network engineers and traders monitor, analyze, and understand network latency patterns across cryptocurrency exchanges and data centers worldwide. The application provides real-time and historical latency data visualization with interactive filtering and detailed performance metrics.
 
+## Some Screenshots of the project  
+<img width="1919" height="899" alt="image" src="https://github.com/user-attachments/assets/097d78cf-810f-4694-accc-190e8544ab2a" />
+<img width="1910" height="896" alt="image" src="https://github.com/user-attachments/assets/c798f6a9-afd5-45de-8af4-9b1f22bd9ce9" />
+<img width="1909" height="899" alt="image" src="https://github.com/user-attachments/assets/ca3577a0-e330-41ef-ab1a-8887c21bae49" />
+
+
+
+
 ## Features
 
 ### 🗺️ Interactive Map Visualization
